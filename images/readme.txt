@@ -1,1 +1,1 @@
-Here is the collection of iòages for the website
+Here is the collection of images for the website
