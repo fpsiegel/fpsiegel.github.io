@@ -9,9 +9,14 @@
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 img {
     max-width: 100%;
+    max-height: 100%;
     height: auto;
     width: auto\9; /* ie8 */
 }
+#example {
+   position: absolute;
+   top: 10px;
+   left: 10px; 
 </style>
 <script>
 function refresh(node)
@@ -38,15 +43,18 @@ window.onload = function()
   refresh(node);
   // you can refresh as many images you want just repeat above steps
 }
+function myFunction() {
+    alert('This is a picture of the Seppie Lab, taken by the pi3 camera. It is then stored onto a local apache server hosted on a headless pi3 computer. This  github hosted website has then the authorisation to grab and get the picture to you ! And this happens every second !');
+}
+
 </script>
 </head>
 
-	<body class="w3-light-grey">
-
+	<body class="w3-light-grey" >
+<div id="example">
 <h1> The Seppie Lab </h1>
-
-
-
+<button onclick="setTimeout(myFunction, 500);">What am I seeing ?</button>
+</div>
 <img id="img" src="http://79.22.88.198/seppie_window/sw.jpg" alt="Seppie window">
 
 
