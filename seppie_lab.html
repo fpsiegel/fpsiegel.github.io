@@ -46,6 +46,9 @@ window.onload = function()
 function myFunction() {
     alert('This is a picture of the Seppie Lab taken a second ago by a pi3 camera. It is then stored onto a local Apache2 server hosted on a headless raspberry pi3 computer. Then, the github hosted website you are on grabbed the picture from the previously mentionned server and showed it to you ! And this should happens every second !(depending on your connection and browser)');
 }
+function myFunction2() {
+    alert('It might be that the shop is closed and we have turned off the devices bringing the live view to you, or that the basic I.O.T. system that we have put in place has stop functionning for mysterious reasons. Both ways, we are very sorry for the inconvenience!');
+}
 
 </script>
 </head>
@@ -56,8 +59,11 @@ function myFunction() {
 <button 
 style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.3); border: none" 
 onclick="setTimeout(myFunction, 500);">What am I seeing ?</button>
+<button 
+style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.3); border: none" 
+onclick="setTimeout(myFunction2, 500);">Is nothing showing up ?</button>
 </div>
-<img id="img" src="http://79.22.88.198/seppie_window/sw.jpg" alt="Seppie window">
+<img id="img" src="http://79.22.88.198/seppie_window/sw.jpg" alt="If this text is showing, our system might be having trouble getting the live view to you. Sorry!">
 
 
 <br>
