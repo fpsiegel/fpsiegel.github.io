@@ -26,8 +26,14 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </style>
 </head>
 <body class="w3-light-grey">
-
-<body>
+	<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.11&appId=159456584683850';
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
  <div class="w3-main" style="margin-left:50px;margin-top:50px;margin-right: 50px;margin-bottom: 50px">
  		<h1> The Seppie Lab </h1>
 	 <header class="w3-container" style="padding-top:22px">
@@ -112,6 +118,8 @@ html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 <br>
 <h4> Contact </h4>
 <p style="background-color:DodgerBlue;color:White"> Would you like to know more ? contact us at: <u>Larivoluzionedelleseppie@gmail.com</u> ! Baccio !</p>
+<br>
+<div class="fb-like" data-href="http://fpsiegel.github.io/index.html" data-width="300" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div>
 <br>
 <br>
 <br>
