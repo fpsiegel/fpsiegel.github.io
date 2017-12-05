@@ -1,22 +1,47 @@
 <head>
-	<link rel="shortcut icon" href="images/logo_seppie.jpg">
-	<title> The Seppie Lab </title>
+	<title> Look in ! </title>
 	<meta charset="UTF-8">
+	<meta name="description" content="The web face of the Seppie Lab">
+    <meta name="keywords" content="Seppie,Seppie lab, html, css, larivoluzionedelleseppie, raspberrypi3, pi3, education, calabria, amantea">
+    <meta name="author" content="Florian Siegel">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="The Seppie Lab">
+    <meta property="og:description" content="A space for education and work on the edge of global economy.">
+    <meta property="og:image" content="http://floriansiegel.com/wp-content/uploads/2017/12/Seppie_thumb.jpg">
+    <meta property="og:url" content="seppielab.tk">
+    <meta name="twitter:title" content="The Seppie Lab">
+    <meta name="twitter:description" content="A space for education and work on the edge of global economy.">
+    <meta name="twitter:image" content="http://floriansiegel.com/wp-content/uploads/2017/12/Seppie_thumb.jpg">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+
+.home a {
+    text-decoration: none;
+}
+.flying {
+    position: fixed;
+    top: 100;
+    left: 100;
+    z-index: +1;
+}
 img {
+	position: fixed;
+	top: 0;
+	left: 0;
     max-width: 100%;
-    max-height: 100%;
     height: auto;
     width: auto\9; /* ie8 */
+    z-index: -1
 }
-#example {
-   position: absolute;
-   top: 10px;
-   left: 10px; 
 </style>
 <script>
 function refresh(node)
@@ -53,14 +78,14 @@ function myFunction2() {
 </script>
 </head>
 
-	<body class="w3-light-grey" >
+	<body class="w3-light-grey" class="flying">
 <div id="example">
-<h1 style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.3);"> The Seppie Lab </h1>
+<h1 class="home" style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.5);"><a target="_blank" href="index.html"> The Seppie Lab </a></h1>
 <button 
-style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.3); border: none" 
+style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.5); border: none" 
 onclick="setTimeout(myFunction, 500);">What am I seeing ?</button>
 <button 
-style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.3); border: none" 
+style="background-color: rgba(255, 255, 255, 0.3); color: rgba(0, 0, 0, 0.5); border: none" 
 onclick="setTimeout(myFunction2, 500);">Is nothing showing up ?</button>
 </div>
 <img id="img" src="http://seppielab.hopto.org/seppie_window/sw.jpg" alt="If this text is showing, our system might be having trouble getting the live view to you. Sorry!">
