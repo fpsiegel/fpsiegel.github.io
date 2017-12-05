@@ -23,7 +23,6 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 html,body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
-
 .home a {
     text-decoration: none;
 }
@@ -42,12 +41,16 @@ img {
     width: auto\9; /* ie8 */
     z-index: -1
 }
+div.fb-comments {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+}
 </style>
 <script>
 function refresh(node)
 {
    var times = 10000; // gap in Milli Seconds;
-
    (function startRefresh()
    {
       var address;
@@ -56,12 +59,9 @@ function refresh(node)
       else 
        address = node.src;
       node.src = address+"?time="+new Date().getTime();
-
       setTimeout(startRefresh,times);
    })();
-
 }
-
 window.onload = function()
 {
   var node = document.getElementById('img');
@@ -74,7 +74,6 @@ function myFunction() {
 function myFunction2() {
     alert('It might be that the shop is closed and we have turned off the devices bringing the live view to you, or that the basic I.O.T. system that we have put in place has stop functionning for mysterious reasons. Both ways, we are very sorry for the inconvenience!');
 }
-
 </script>
 </head>
 
