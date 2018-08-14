@@ -1,0 +1,119 @@
+body {
+    background-color: ghostwhite;
+}
+
+.title {
+    color: white;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 40px; 
+}
+
+.stitle {
+    padding-top: 25px;
+    padding-left: 25px;
+    padding-right: 25px;
+    padding-bottom: 25px;
+    color: black;
+    margin-left: 20px;
+    text-align: center;
+    font-family: 'Fredoka One';
+    font-size: 30px; 
+}
+
+
+.interest {
+    color: black; 
+    font-size: 20px; 
+    text-align: center;
+    padding: 25px;
+    font-family: 'Open Sans';
+    font-style: italic;
+    font-weight: 100;
+    font-variant: normal; 
+}
+.figure {
+    margin: 0px;
+}
+.text {
+    color: black; 
+    font-size: 16px; 
+    text-align: center;
+    padding: 25px;
+    font-family: 'Open Sans';
+}
+
+.jumbotron {
+
+ background:transparent;
+}
+
+.article {
+    padding: 20px;
+}
+
+
+.bgimg {
+    min-height: 400px;
+    background-image: url(img/workshoppic.jpg);
+    background-position: 50% 0%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bgimg2 {
+    min-height: 400px;
+    background-image: url(img/workshoppic.jpg);
+    background-position: 50% 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.imgarticle {
+        padding: 25px;
+    max-width: 100%;
+}
+
+.banner {
+        object-fit: cover;
+    height: 200px;
+    width: 100%;
+}
+/* IMAGE CAPTION 
+
+    .caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+  font-family: "Raleway", sans-serif
+}
+    .caption span.border {
+        top: 50%;
+  background-color: #111;
+  color: #fff;
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+
+ PARALLAX EFFECTS 
+*/
+/* 
+.parallax {
+   The image used 
+    background-image: url("img/workshoppic.JPG");
+
+    Set a specific height
+    min-height: 700px; 
+
+     Create the parallax scrolling effect 
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+*/
